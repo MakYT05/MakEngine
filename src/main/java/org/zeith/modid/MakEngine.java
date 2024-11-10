@@ -19,12 +19,7 @@ public class MakEngine {
 					.withTabsBefore(HLConstants.HL_TAB.id())
 	);
 
-	public MakEngine() {
-		LanguageAdapter.registerMod(MOD_ID);
-		ScriptLoader.loadScripts();
-	}
+	public MakEngine() { LanguageAdapter.registerMod(MOD_ID); }
 
-	public static ResourceLocation id(String path) {
-		return new ResourceLocation(MOD_ID, path);
-	}
+	public static ResourceLocation id(String path) { return new ResourceLocation(MOD_ID, path); }
 }
