@@ -8,14 +8,11 @@ import org.zeith.modid.scripting.actions.*;
 
 import java.util.logging.Logger;
 
-public class ActionProcessor
-{
+public class ActionProcessor {
     private static final Logger LOGGER = Logger.getLogger("MakEngine");
 
-    public static void processAction(String actionType, JsonObject action, ServerLevel world, ServerPlayer player, Mob mob)
-    {
-        switch (actionType)
-        {
+    public static void processAction(String actionType, JsonObject action, ServerLevel world, ServerPlayer player, Mob mob) {
+        switch (actionType) {
             case "message" -> MessageAction.execute(action, player);
             case "spawn_entity" -> SpawnEntityAction.execute(action, world, player);
             case "set_weather" -> WeatherAction.execute(action, world);

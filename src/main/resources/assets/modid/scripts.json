@@ -1,0 +1,35 @@
+{
+  "actions": [
+    {
+      "type": "message",
+      "text": "Hello, player! Welcome to the world of Minecraft!"
+    },
+    {
+      "type": "spawn_entity",
+      "entity_id": "minecraft:zombie",
+      "x": 100,
+      "y": 64,
+      "z": 100
+    },
+    {
+      "type": "set_weather",
+      "weather": "rain"
+    },
+    {
+      "type": "set_time",
+      "time": 1000
+    },
+    {
+      "type": "animation",
+      "particle": "smoke",
+      "x": 100,
+      "y": 64,
+      "z": 100,
+      "count": 10
+    },
+    {
+      "type": "mob_behavior",
+      "aggressive": true
+    }
+  ]
+}
